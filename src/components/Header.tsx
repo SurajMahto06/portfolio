@@ -79,6 +79,7 @@ const Header = () => {
                     {navList?.map((list, index) => {
                       return (
                         <li
+                          onClick={()=>setMenuToggle(false)}
                           className={`${
                             theme === "dark" ? "text-white" : "text-black"
                           }`}

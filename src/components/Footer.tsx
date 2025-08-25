@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-span-12 text-center pt-10">
-                <p className="mb-0">© Copyright 2025. Made by <span className="text-primary">[#<strong className="dark:text-white text-black font-normal" >Suraj Ku. Mahto</strong>]</span></p>
+                <p className="mb-0">© 2025 All rights reserved. Made by <span className="text-primary">[#<strong className="dark:text-white text-black font-normal" >Suraj Ku. Mahto</strong>]</span></p>
             </div>
           </div>
         </div>

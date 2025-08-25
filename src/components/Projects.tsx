@@ -10,6 +10,7 @@ const projects = [
     title: "Tatvam",
     description:
       "More modern, target group-oriented, more powerful – a digital relaunch with measurable success through a strategically optimized website.",
+    live: 'https://tatvamelectronics.com/'  
   },
 ];
 
@@ -27,7 +28,7 @@ const Projects = ({ page, view }: ProjectsProps) => {
           <div className="grid grid-cols-12 gap-4 h-full">
             {(view === "all" ? projects : projects?.slice(0, 3))?.map(
               (card) => {
-                const { id, banner, techs, title, description } = card;
+                const { id, banner, techs, title, description, live } = card;
                 return (
                   <Cards
                     key={id}
@@ -35,6 +36,7 @@ const Projects = ({ page, view }: ProjectsProps) => {
                     banner={banner}
                     techs={techs}
                     description={description}
+                    live={live}
                   />
                 );
               }

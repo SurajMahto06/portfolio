@@ -6,9 +6,10 @@ interface CardsProps {
   techs: string;
   title: string;
   description: string;
+  live?: string
 }
 
-const Cards = ({ banner, techs, title, description }: CardsProps) => {
+const Cards = ({ banner, techs, title, description,live }: CardsProps) => {
   return (
     <div className="col-span-12 sm:col-span-6 lg:col-span-4">
       <div className="border border-grey flex flex-col h-full">
@@ -27,10 +28,10 @@ const Cards = ({ banner, techs, title, description }: CardsProps) => {
             <p>{description}</p>
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
-            <Button href="/" variant="primary">
+            <Button href={live} variant="primary" target="_blank">
               Live
             </Button>
-            <Button href="/" variant="secondary">
+            <Button href="/" variant="secondary" target="_blank">
               Cached
             </Button>
           </div>
