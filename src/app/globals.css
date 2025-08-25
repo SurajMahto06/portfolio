@@ -5,9 +5,19 @@
 }
 
 @theme {
-  --color-purple: #c778dd;
+  --color-primary: #c778dd;
   --color-black: #000;
+  --color-light-black: #282c33;
   --color-white: #fff;
+  --color-grey: #abb2bf;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 40px;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -21,10 +31,43 @@ body {
   box-sizing: border-box;
 }
 
+header ~ section{
+  margin-top: 64px;
+}
+
 @layer base {
-  @media (max-width: 639px) {
-    .container {
-      padding: 0 1rem; /* or whatever value you want */
-    }
+  .container {
+      padding: 0 1.5rem;
+  }
+  h1 {
+    @apply text-4xl font-semibold mb-10;
+  }
+  h1 span {
+    @apply text-primary;
+  }
+  h2 {
+    @apply text-3xl font-medium whitespace-nowrap;
+  }
+  h2 span {
+    @apply text-primary;
+  }
+  h3 {
+    @apply text-2xl font-medium mb-2;
+  }
+
+  h4 {
+    @apply text-xl font-medium mb-2;
+  }
+  h5 {
+    @apply text-lg font-medium;
+  }
+  h6 {
+    @apply text-base font-medium;
+  }
+  p {
+    @apply text-base font-normal text-grey mb-6;
+  }
+  a {
+    @apply text-base font-medium;
   }
 }

@@ -6,7 +6,7 @@ export const routes = {
   homepage: {
     root: ROOTS.HOMEPAGE,
     about_me: `${ROOTS.HOMEPAGE}/about`,
-    works: `${ROOTS.HOMEPAGE}/works`,
-    contacts: `${ROOTS.HOMEPAGE}/contacts`,
+    projects: `${ROOTS.HOMEPAGE}/projects`,
+    contacts: `${ROOTS.HOMEPAGE}/contact`,
   },
 };

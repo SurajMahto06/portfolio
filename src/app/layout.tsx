@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${firaCode.variable} antialiased bg-white text-[#282C33] dark:bg-[#282C33] dark:text-white`}
+        className={`${firaCode.variable} antialiased bg-[#f3f3f3] text-light-black dark:bg-light-black dark:text-white`}
       >
         <Providers>
           <Header />
@@ -32,5 +32,5 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
-  );
+  )
 }
